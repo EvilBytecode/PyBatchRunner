@@ -72,3 +72,9 @@ To execute the script, run the following command in your terminal:
     python main.py
 
 This will run through various functionalities provided by the modules and showcase the output.
+
+
+## Todo:
+reg add
+reg del
+idk
