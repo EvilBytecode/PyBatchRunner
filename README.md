@@ -1,5 +1,5 @@
 
-PybATCHrUNNER
+PyBatchRunner
 =====================
 
 This script demonstrates the usage of various modules for running different types of commands and scripts.
