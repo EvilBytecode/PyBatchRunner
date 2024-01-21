@@ -47,10 +47,10 @@ Modules Used
 
     from module.reg import hcku, hklm
     
-    output_hcku = hcku("ExampleKey", "Software\\MyApp", "NewValue")
+    output_hcku = hcku("ExampleKey", "Software\\MyApp1", "NewValue")
     print(output_hcku)
     
-    output_hklm = hklm("AnotherKey", "Software\\MyApp", "AnotherValue")
+    output_hklm = hklm("ExampleKey1", "Software\\MyApp1", "AnotherValue") ## will need uac if im right not sure rn
     print(output_hklm)
 
 ### 5\. Administrative Permission Check Module
