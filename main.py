@@ -8,16 +8,16 @@ from module.powershellrun import runpscommand
 
 def main():
     print("\n1. Running single-line script:")
-    output_single_line = runsingleline("echo Running a single-line script")
-    print(output_single_line)
+    singleline_put = runsingleline("echo Running a single-line script")
+    print(singleline_put)
 
     print("\n2. Running PowerShell command:")
-    output_powershell = runpscommand("Get-Process")
-    print(output_powershell)
+    powershell_put = runpscommand("Get-Process")
+    print(powershell_put)
 
 
     print("\n3. Running advanced script:")
-    output_advanced = advscript("""
+    put_advanced = advscript("""
         mkdir example_folder
         echo This is content for file1 > example_folder\\file1.txt
         echo Content for file2 > example_folder\\file2.txt
@@ -25,15 +25,15 @@ def main():
         dir example_folder
         echo Additional content >> example_folder\\file2.txt
     """)
-    print(output_advanced)
+    print(put_advanced)
 
     print("\n4. Modifying the registry (HKEY_CURRENT_USER):")
-    output_hcku = hcku("ExampleKey", "Software\\MyApp", "NewValue")
-    print(output_hcku)
+    hcku_put = hcku("ExampleKey", "Software\\MyApp", "NewValue")
+    print(hcku_put)
 
     print("\n5. Modifying the registry (HKEY_LOCAL_MACHINE):")
-    output_hklm = hklm("AnotherKey", "Software\\MyApp", "AnotherValue")
-    print(output_hklm)
+    put_hklm = hklm("AnotherKey", "Software\\MyApp", "AnotherValue")
+    print(put_hklm)
 
     print("\n6. Checking administrative permissions:")
     if check():
