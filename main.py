@@ -28,11 +28,11 @@ def main():
     print(put_advanced)
 
     print("\n4. Modifying the registry (HKEY_CURRENT_USER):")
-    hcku_put = hcku("ExampleKey", "Software\\MyApp", "NewValue")
+    hcku_put = hcku("ExampleKey1", "Software\\MyApp1", "AnotherValue1")
     print(hcku_put)
 
     print("\n5. Modifying the registry (HKEY_LOCAL_MACHINE):")
-    put_hklm = hklm("AnotherKey", "Software\\MyApp", "AnotherValue")
+    put_hklm = hklm("AnotherKey2", "Software\\MyApp2", "AnotherValue2")
     print(put_hklm)
 
     print("\n6. Checking administrative permissions:")
